@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{/admin/layout/_form :: dynamic(
+				~{::main},
+				~{::#javascriptResource},
+				~{::#cssResource}
+				)}">
+<th:block id="cssResource">
+	<!-- Plugins For This Page -->
+	<link rel="stylesheet"
+		href="/assets/admin/global/vendor/summernote/summernote.min599c.css?v4.0.2">
+</th:block>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<main>
+		<div class="page">
+			<div class="page-header">
+				<h1 class="page-title">Tạo Mô Tả</h1>
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="../index.html">Trang
+							chủ</a></li>
+					<li class="breadcrumb-item"><a href="javascript:void(0)">Tiện
+							ích</a></li>
+					<li class="breadcrumb-item active">Mô tả</li>
+				</ol>
+			</div>
+
+			<div class="page-content container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<!-- Panel Standard Editor -->
+						<div class="panel">
+							<div class="panel-heading">
+								<h3 class="panel-title">Standard Editor</h3>
+							</div>
+							<div class="panel-body">
+								<div id="summernote" data-plugin="summernote">
+									<p style="margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px; font-size: 1em; color: rgb(51, 51, 51); font-family: nunito-sans, sans-serif, Helvetica, Arial; text-align: justify;"><strong style="margin: 0px; padding: 0px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Chưa Kịp Lớn Đã Trưởng Thành</strong></p><p style="margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px; font-size: 1em; color: rgb(51, 51, 51); font-family: nunito-sans, sans-serif, Helvetica, Arial; text-align: justify;">Chúng ta của hiện tại, đều chưa kịp lớn đã phải trưởng thành.</p><p style="margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px; font-size: 1em; color: rgb(51, 51, 51); font-family: nunito-sans, sans-serif, Helvetica, Arial; text-align: justify;">Lúc còn nhỏ có thể khóc cười tuỳ ý. Trưởng thành rồi mới biết hành động cũng cần nhìn sắc mặt người khác.</p><p style="margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px; font-size: 1em; color: rgb(51, 51, 51); font-family: nunito-sans, sans-serif, Helvetica, Arial; text-align: justify;">Lúc còn nhỏ có thể sống vô tư, vô lo. Trưởng thành rồi mới biết nếu chậm chân hơn người khác, chắc chắn sẽ bị đào thải bất cứ lúc nào.</p><p style="margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding: 0px; font-size: 1em; color: rgb(51, 51, 51); font-family: nunito-sans, sans-serif, Helvetica, Arial; text-align: justify;">Lúc còn nhỏ có thể khao khát, mơ mộng. Trưởng thành rồi mới biết thế giới ngoài kia thực sự rất tàn khốc.</p>
+								</div>
+							</div>
+						</div>
+						<!-- End Panel Standard Editor -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Page -->
+	</main>
+</body>
+<th:block id="javascriptResource">
+	<!-- Plugins For This Page -->
+	<script
+		src="/assets/admin/global/vendor/summernote/summernote.min599c.js?v4.0.2"></script>
+
+	<script
+		src="/assets/admin/global/js/Plugin/summernote.min599c.js?v4.0.2"></script>
+	<script
+		src="/assets/admin/base/assets/examples/js/forms/editor-summernote.min599c.js?v4.0.2"></script>
+</th:block>
+</html>
